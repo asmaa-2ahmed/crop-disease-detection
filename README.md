@@ -28,7 +28,7 @@ PlantDisease/
 
 1. Clone the repository:
    ```bash
-   git clone <repository-url>
+   git clone <[repository-url](https://github.com/asmaa-2ahmed/crop-disease-detection)>
    cd PlantDisease
    ```
 
@@ -54,17 +54,6 @@ PlantDisease/
 
 3. Upload an image of a plant leaf and view the prediction results.
 
-## Dependencies
-The project uses the following Python libraries:
-- TensorFlow 2.12.0
-- NumPy 1.23.5
-- SciPy 1.13.0
-- Matplotlib (>=3.0)
-- Pandas (>=1.3.0)
-- OpenCV
-- Scikit-learn (>=1.0)
-- Pillow
-- Streamlit
 
 ## Model
 The application uses a pre-trained deep learning model stored in `src/assets/model_weights.h5`. The model was trained on a dataset of plant leaf images categorized by plant type and disease.
