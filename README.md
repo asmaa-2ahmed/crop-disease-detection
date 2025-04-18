@@ -1,72 +1,153 @@
-# Plant Disease Detection
+# 🌿 AI-Powered Crop Disease Detection Using Deep Learning 🚀
 
-This project is a web application for detecting plant diseases using deep learning. It allows users to upload an image of a plant leaf and predicts the type of plant, the disease affecting it (if any), and the confidence level of the prediction.
+Welcome to the **Crop Disease Detection Web App**, an AI-driven tool designed to help identify plant diseases directly from leaf images using deep learning. In an age where global food security is challenged by agricultural diseases, this project demonstrates how artificial intelligence can offer **fast, accurate, and scalable** plant disease diagnosis.
 
-## Features
-- Upload an image of a plant leaf.
-- Predict the plant type and disease.
-- Display the confidence level of the prediction.
-- Built with TensorFlow for deep learning and Streamlit for the web interface.
+This system was developed as the core of a **Neural Networks course project** and earned a **Certificate of Appreciation** from Pharos University — proving both its technical and practical significance. 🍃📸
 
-## Project Structure
+---
+
+## 🌟 Key Features
+
+- ✅ **Image Upload**: Detect disease from a photo of a plant leaf  
+- ✅ **Plant Type & Disease Prediction**  
+- ✅ **Confidence Score Visualization**  
+- ✅ **Pre-trained Deep Learning Model (TensorFlow)**  
+- ✅ **Intuitive Web Interface with Streamlit**  
+- ✅ **Custom UI Styling & Modular Codebase**
+
+---
+
+## 🔍 What’s Under the Hood?
+
+To develop the most accurate model, several CNN architectures and optimizers were explored:
+
+| Architecture | Optimizer | Accuracy |
+|--------------|-----------|----------|
+| ✅ Xception   | Adam      | 🥇 **92.37%** |
+| NASNet       | SGD       | 85.53%   |
+| VGG16        | Adam      | 89.00%   |
+
+🔧 These experiments highlight the importance of model architecture and optimizer pairing in deep learning performance.
+
+---
+
+## 🚀 Getting Started
+
+### 1️⃣ Clone the Repository
+
+```bash
+git clone https://github.com/asmaa-2ahmed/crop-disease-detection.git
+cd PlantDisease
 ```
-PlantDisease/
-├── app.py                # Main Streamlit application
-├── requirements.txt      # Python dependencies
-├── src/                  # Source code
-│   ├── config.py         # Configuration settings
-│   ├── inference.py      # Prediction logic
-│   ├── schemas.py        # Data schemas
-│   ├── utils.py          # Utility functions
-│   └── assets/           # Model weights and datasets
-│       ├── model_weights.h5  # Pre-trained model weights
-│       └── dataset/      # Dataset for training and testing
-└── notebooks/            # Jupyter notebooks for experiments
+
+### 2️⃣ Create and Activate a Virtual Environment
+
+```bash
+python -m venv venv
+source venv/bin/activate       # On Windows: venv\Scripts\activate
 ```
 
-## Installation
+### 3️⃣ Install Required Dependencies
 
-1. Clone the repository:
-   ```bash
-   git clone <[repository-url](https://github.com/asmaa-2ahmed/crop-disease-detection)>
-   cd PlantDisease
-   ```
+```bash
+pip install -r requirements.txt
+```
 
-2. Create a virtual environment and activate it:
-   ```bash
-   python -m venv venv
-   source venv/bin/activate  # On Windows: venv\Scripts\activate
-   ```
+---
 
-3. Install the required dependencies:
-   ```bash
-   pip install -r requirements.txt
-   ```
+## ▶️ Run the Application
 
-## Usage
+Start the Streamlit app:
 
-1. Run the Streamlit application:
-   ```bash
-   streamlit run app.py
-   ```
+```bash
+streamlit run app.py
+```
 
-2. Open the application in your browser at `http://localhost:8501`.
+This will launch the interface in your browser at: [http://localhost:8501](http://localhost:8501)
 
-3. Upload an image of a plant leaf and view the prediction results.
+---
 
+## 🖼 How to Use It
 
-## Model
-The application uses a pre-trained deep learning model stored in `src/assets/model_weights.h5`. The model was trained on a dataset of plant leaf images categorized by plant type and disease.
+1. Launch the app using the command above  
+2. Upload a **clear image** of a plant leaf  
+3. View:
+   - 🌱 The **predicted plant type**
+   - 🦠 The **detected disease (if any)**
+   - 📊 The **confidence score** of the prediction  
 
-## Dataset
-The dataset is organized into training and testing sets under `src/assets/dataset/`. Each category corresponds to a specific plant type and disease.
+No code changes needed — just plug and play!
 
-## Contributing
-Contributions are welcome! Please fork the repository and submit a pull request.
+---
 
-## License
-This project is licensed under the MIT License. See the LICENSE file for details.
+## 🧠 Model Details
 
-## Acknowledgments
-- The dataset used for training the model.
-- TensorFlow and Streamlit for their powerful tools.
+- **Framework:** TensorFlow / Keras  
+- **Model Format:** HDF5 (`model_weights.h5`)  
+- **Architecture:** Xception (best performing)  
+- **Training Set:** High-resolution images of diseased and healthy plant leaves  
+- **Categories:** Multiple plant types with disease/no-disease labels  
+
+📁 Model Location: `src/assets/model_weights.h5`
+
+---
+
+## 🌱 Dataset
+
+The training and testing images are organized in:
+
+```
+src/assets/dataset/
+```
+
+Each folder represents a specific class (e.g., `Tomato___Early_blight`, `Corn___Healthy`).
+
+Dataset used for training was sourced from a public agricultural image dataset.
+
+---
+
+## 📫 Contributing
+
+Contributions are welcome and encouraged!
+
+If you have ideas for improving:
+- 🔍 Model performance  
+- 🎨 User interface  
+- 🧪 Testing  
+- 📊 Visualization  
+
+Feel free to **fork the repo** and submit a **pull request**. Let’s make agriculture smarter, together.
+
+---
+
+## 📄 License
+
+This project is licensed under the **MIT License**. See the [LICENSE](https://github.com/asmaa-2ahmed/crop-disease-detection/blob/main/LICENSE) file for details.
+
+---
+
+## 🙏 Acknowledgments
+
+- Special thanks to my **professors and mentors** for their guidance.  
+- Huge appreciation to **TensorFlow**, **Streamlit**, and open-source contributors.  
+- Dataset creators who made this possible for academic research.
+
+---
+
+## 🔗 Links
+
+- 🔍 **GitHub Repository**: [github.com/asmaa-2ahmed/crop-disease-detection](https://github.com/asmaa-2ahmed/crop-disease-detection)  
+- 🎓 Featured in: Neural Networks Course Project  
+- 🏅 Awarded: Certificate of Appreciation – Pharos University
+
+---
+
+## 💬 Have Suggestions?
+
+If you’ve got ideas for improvements, feel free to:
+
+- Open an [issue](https://github.com/asmaa-2ahmed/crop-disease-detection/issues)
+- Contact me through LinkedIn or GitHub
+- Submit a pull request!
+
+Let’s build better tech for sustainable agriculture 🌾
